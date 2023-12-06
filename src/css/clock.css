@@ -1,0 +1,80 @@
+#root {
+  width: 45vw;
+}
+
+.form-clock {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end; 
+}
+
+.form-city, .form-timezone {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-city label, .form-timezone label {
+  padding-bottom: 0.5rem;
+}
+
+.form-city select, .form-timezone select, button {
+  box-sizing: border-box;
+  height: 2rem;
+}
+
+.clock img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-clock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-clock {
+}
+
+.clock-arrow-hours {
+  fill: red;
+  /* animation: arrow-hours;
+  animation-duration: 86400s; */
+  transform-origin: center;
+  /* border: 1px solid gray;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(60); */
+}
+
+.clock-arrow-minute {
+  /* animation: arrow-hours; */
+  /* animation-duration: 3600s; */
+  transform-origin: center;
+  /* border: 1px solid gray; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: steps(60); */
+}
+
+@keyframes arrow-hours {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.show-clock {
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem 1rem 0 0;
+  position: relative;
+  text-align: center;
+}
+
+.cross {
+  cursor: pointer;
+}
+
+.show-clocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
